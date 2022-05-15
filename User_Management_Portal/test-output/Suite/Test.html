@@ -1,0 +1,575 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>38/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 09 12:39:15 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1371 seconds (1371189 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {&quot;code&quot;:-32000,&quot;message&quot;:&quot;Inspected target navigated or closed&quot;}
+  (Session info: chrome=101.0.4951.54)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RLEMNO7&apos;, ip: &apos;192.168.68.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a3500ed1c4bc2c8c51a9730e313c98b
+*** Element info: {Using=xpath, value=//div[@class=&apos;header-left-menu pt-1&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges.add_system_user(TC12_check_nonadmin_user_privileges.java:63)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1739806152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1739806152'><pre>org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {&quot;code&quot;:-32000,&quot;message&quot;:&quot;Inspected target navigated or closed&quot;}
+  (Session info: chrome=101.0.4951.54)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RLEMNO7&apos;, ip: &apos;192.168.68.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a3500ed1c4bc2c8c51a9730e313c98b
+*** Element info: {Using=xpath, value=//div[@class=&apos;header-left-menu pt-1&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges.add_system_user(TC12_check_nonadmin_user_privileges.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>24</td>
+<td>org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges@5025a98f</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {&quot;code&quot;:-32000,&quot;message&quot;:&quot;Inspected target navigated or closed&quot;}
+  (Session info: chrome=101.0.4951.54)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RLEMNO7&apos;, ip: &apos;192.168.68.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef777b77637eb81f614c77a3bf705f73
+*** Element info: {Using=xpath, value=//div[@class=&apos;header-left-menu pt-1&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege.add_system_user(TC11_add_user_by_enable_admin_check_admin_privilege.java:64)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1189870601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1189870601'><pre>org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {&quot;code&quot;:-32000,&quot;message&quot;:&quot;Inspected target navigated or closed&quot;}
+  (Session info: chrome=101.0.4951.54)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RLEMNO7&apos;, ip: &apos;192.168.68.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef777b77637eb81f614c77a3bf705f73
+*** Element info: {Using=xpath, value=//div[@class=&apos;header-left-menu pt-1&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege.add_system_user(TC11_add_user_by_enable_admin_check_admin_privilege.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>24</td>
+<td>org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege@148080bb</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;ng-select-container&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RLEMNO7&apos;, ip: &apos;192.168.68.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15252, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 113cdf5c-9042-46e0-ac43-d7f941e51487
+*** Element info: {Using=xpath, value=//div[@class=&apos;ng-select-container&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check.add_system_user1(TC08_addsystemuser_assigngroup_and_check.java:104)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1410514922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1410514922'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;ng-select-container&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RLEMNO7&apos;, ip: &apos;192.168.68.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 15252, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 113cdf5c-9042-46e0-ac43-d7f941e51487
+*** Element info: {Using=xpath, value=//div[@class=&apos;ng-select-container&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check.add_system_user1(TC08_addsystemuser_assigngroup_and_check.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>39</td>
+<td>org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check@2d928643</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a class=&quot;dropdown-toggle rounded-right&quot; href=&quot;javascript:void(0);&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RLEMNO7&apos;, ip: &apos;192.168.68.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17096, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4a0a0192-3a95-42bb-aeec-b2ddb2f24618
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select.add_system_user1(TC05_check_dashboardlist_based_on_repository_select.java:129)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1935524147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1935524147'><pre>org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a class=&quot;dropdown-toggle rounded-right&quot; href=&quot;javascript:void(0);&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RLEMNO7&apos;, ip: &apos;192.168.68.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17096, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4a0a0192-3a95-42bb-aeec-b2ddb2f24618
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select.add_system_user1(TC05_check_dashboardlist_based_on_repository_select.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>32</td>
+<td>org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select@64bf3bbf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check</td>
+<td></td>
+<td>24</td>
+<td>org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check@2d928643</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC01_add_systemuser_and_verify.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC01_add_systemuser_and_verify</td>
+<td></td>
+<td>21</td>
+<td>org.test.pro.add_system_users.TC01_add_systemuser_and_verify@49993335</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check</td>
+<td></td>
+<td>34</td>
+<td>org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check@20322d26</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status</td>
+<td></td>
+<td>21</td>
+<td>org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status@192b07fd</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not</td>
+<td></td>
+<td>16</td>
+<td>org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not@64bfbc86</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select</td>
+<td></td>
+<td>29</td>
+<td>org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select@64bf3bbf</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check</td>
+<td></td>
+<td>30</td>
+<td>org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check@55d56113</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status</td>
+<td></td>
+<td>21</td>
+<td>org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status@dc24521</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC15_check_active_user_able_to_login.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC15_check_active_user_able_to_login</td>
+<td></td>
+<td>20</td>
+<td>org.test.pro.add_system_users.TC15_check_active_user_able_to_login@10bdf5e5</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login</td>
+<td></td>
+<td>20</td>
+<td>org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login@6e1ec318</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select</td>
+<td></td>
+<td>28</td>
+<td>org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select@7e0b0338</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user.add_system_user()'><b>add_system_user</b><br>Test class: org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user</td>
+<td></td>
+<td>28</td>
+<td>org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user@617faa95</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges</td>
+<td></td>
+<td>28</td>
+<td>org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges@5025a98f</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC01_add_systemuser_and_verify.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC01_add_systemuser_and_verify</td>
+<td></td>
+<td>24</td>
+<td>org.test.pro.add_system_users.TC01_add_systemuser_and_verify@49993335</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check</td>
+<td></td>
+<td>40</td>
+<td>org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check@20322d26</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status</td>
+<td></td>
+<td>25</td>
+<td>org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status@192b07fd</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not</td>
+<td></td>
+<td>19</td>
+<td>org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not@64bfbc86</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check</td>
+<td></td>
+<td>33</td>
+<td>org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check@55d56113</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege</td>
+<td></td>
+<td>28</td>
+<td>org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege@148080bb</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status</td>
+<td></td>
+<td>24</td>
+<td>org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status@dc24521</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC15_check_active_user_able_to_login.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC15_check_active_user_able_to_login</td>
+<td></td>
+<td>24</td>
+<td>org.test.pro.add_system_users.TC15_check_active_user_able_to_login@10bdf5e5</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login</td>
+<td></td>
+<td>24</td>
+<td>org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login@6e1ec318</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select</td>
+<td></td>
+<td>34</td>
+<td>org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select@7e0b0338</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user.add_system_user1()'><b>add_system_user1</b><br>Test class: org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user</td>
+<td></td>
+<td>32</td>
+<td>org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user@617faa95</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check</td>
+<td></td>
+<td>45</td>
+<td>org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check@2d928643</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges</td>
+<td></td>
+<td>46</td>
+<td>org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges@5025a98f</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC01_add_systemuser_and_verify.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC01_add_systemuser_and_verify</td>
+<td></td>
+<td>23</td>
+<td>org.test.pro.add_system_users.TC01_add_systemuser_and_verify@49993335</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check</td>
+<td></td>
+<td>56</td>
+<td>org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check@20322d26</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status</td>
+<td></td>
+<td>23</td>
+<td>org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status@192b07fd</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not</td>
+<td></td>
+<td>37</td>
+<td>org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not@64bfbc86</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select</td>
+<td></td>
+<td>53</td>
+<td>org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select@64bf3bbf</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check</td>
+<td></td>
+<td>51</td>
+<td>org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check@55d56113</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege</td>
+<td></td>
+<td>46</td>
+<td>org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege@148080bb</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status</td>
+<td></td>
+<td>23</td>
+<td>org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status@dc24521</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC15_check_active_user_able_to_login.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC15_check_active_user_able_to_login</td>
+<td></td>
+<td>40</td>
+<td>org.test.pro.add_system_users.TC15_check_active_user_able_to_login@10bdf5e5</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login</td>
+<td></td>
+<td>40</td>
+<td>org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login@6e1ec318</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select</td>
+<td></td>
+<td>53</td>
+<td>org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select@7e0b0338</td></tr>
+<tr>
+<td title='org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user.add_system_user2()'><b>add_system_user2</b><br>Test class: org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user</td>
+<td></td>
+<td>49</td>
+<td>org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user@617faa95</td></tr>
+</table><p>
+</body>
+</html>

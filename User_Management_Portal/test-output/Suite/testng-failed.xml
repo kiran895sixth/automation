@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="org.test.pro.add_system_users.TC01_add_systemuser_and_verify">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC01_add_systemuser_and_verify -->
+      <class name="org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC16_check_inactive_user_able_to_login -->
+      <class name="org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC07_check_without_selecting_repository_group_field_is_selectable_or_not -->
+      <class name="org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC02_adduser_by_assign_repository_and_check -->
+      <class name="org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges">
+        <methods>
+          <include name="add_system_user"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC12_check_nonadmin_user_privileges -->
+      <class name="org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC06_check_grouplist_based_on_repository_select -->
+      <class name="org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="add_system_user1"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC05_check_dashboardlist_based_on_repository_select -->
+      <class name="org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC13_add_user_as_activestate_check_status -->
+      <class name="org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="add_system_user"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC11_add_user_by_enable_admin_check_admin_privilege -->
+      <class name="org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC14_adduser_as_inactive_check_status -->
+      <class name="org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="add_system_user1"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC08_addsystemuser_assigngroup_and_check -->
+      <class name="org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC04_adduser_with_repository_and_group_and_check -->
+      <class name="org.test.pro.add_system_users.TC15_check_active_user_able_to_login">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC15_check_active_user_able_to_login -->
+      <class name="org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user">
+        <methods>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- org.test.pro.add_system_users.TC03_adduser_with_assigning_dashboard_and_check_user -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="org.test.pro.update_added_user_details.TC01_update_addeduser_details_and_check"/>
+      <class name="org.test.pro.update_added_user_details.TC02_update_firstname_and_check_userlist"/>
+      <class name="org.test.pro.update_added_user_details.TC03_update_lastname_check_userlist"/>
+      <class name="org.test.pro.update_added_user_details.TC04_update_email_check_userlist"/>
+      <class name="org.test.pro.update_added_user_details.TC05_update_timezone_and_check"/>
+      <class name="org.test.pro.update_added_user_details.TC06_update_status_check_userlist"/>
+      <class name="org.test.pro.update_added_user_details.TC07_update_role_check_userlist"/>
+      <class name="org.test.pro.update_added_user_details.TC08_set_temporarypassword_and_check"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
